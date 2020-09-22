@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- lo primero, la meta -->
+    <meta charset="utf-8">
+    <title>Proyecto</title>
+    <!-- Para que la web detecte la resolución de pantalla -->
+    <meta	name="viewport"	content="width=device-width,	initial-scale=1,	shrink-to-fit=no">
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Enlace cdn a fonts awesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Estilos CSS -->
+    <style type="text/css">
+      #nav-menu{
+        background-color: black;
+      }
+
+      .navbar-brand{
+        margin-left: 30px;
+        margin-right: 60px;
+        }
+
+      ul li{
+        margin-right: 30px;
+        font-size: 16px;
+        background-color: black;
+        color: white;
+        width: auto;
+      }
+
+      .sec-title{
+        text-align: center;
+        background-color: #d41121;
+        color: white;
+        font-size: 18px;
+        padding: 10px;
+
+      }
+
+      .col-md-4{
+        text-align: center;
+        /* padding: 10px; */
+        /* background-color: blue; */
+
+      }
+
+      .col-md-4-h3{
+      /* background-color: blue; */
+      padding-bottom: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
+      }
+
+      #material{
+        background-color: #d41121;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+
+      }
+
+      #material-txt{
+        background-color: white;
+        color: black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .card{
+        float: left;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .btn-primary{
+        background-color: #d41121;
+        border-style: none;
+      }
+
+      .btn-primary:hover{
+        background-color: black;
+      }
+
+      #footer{
+        background-color: black;
+        color: white;
+        font-size: 14px;
+      }
+
+      #footer-rejilla{
+        background-color: black;
+
+      }
+
+      #form-control-button{
+        background-color: #d41121;
+        color: white;
+        border-style: none;
+        border-radius: 0px;
+        margin-bottom: 10px;
+      }
+
+      #design{
+        font-size: 13px;
+      }
+
+      #design a{
+        color: grey;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <div id="nav-menu" class="container-fluid">
+      <header class="row">
+         <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+
+          <!-- LOGO -->
+            <a class="navbar-brand" href="#"><img src="https://i.pinimg.com/originals/00/4d/71/004d71c73077ee3b916b3a2f8bee6928.jpg" width=200></a>
+
+
+            <!-- Botón desplegable -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="	#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                  <a class="nav-link" href="#">Quiénes somos</a>
+                  </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Tienda</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+
+                 <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </li>
+
+              </ul>
+              </div>
+            <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNvrfNto7qsHtKtVExDlS2su6qflu0ZyWOO7nNrK3SOKeFV9-L&s" width=50></a>
+            <a class="navbar-brand" href="#"><img src="https://lh4.googleusercontent.com/proxy/hIUZ4ArkA5RHuxDNGg7ISRT7YgWcUUacY3n2nzQdQEy9r93Ejg_SSjqsvv8ranYoKL_8dfS8tTyk-f97XJM4O_ZoFKtEeBc0SSNJLjr4QoG7esqFgtupBQZifRGYaxLOvDH0zb91GTn2UANVvGAd5MCgRpJS-BI5Io-bTKJaHuxFiuOW5BmH8hHX" width=50></a>
+            <a class="navbar-brand" href="#"><img src="https://cdn.clipart.email/7844fd365c94bf8d10e889004e0cb88a_logo-de-instagram-blanco-y-negro-png_1600-1200.png" width=100></a>
+            <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjzgUp8frry1ZqQz_RKkxgx50Gkn1QlVHPa_hgDR8eNkB9KJ5f&s" width=50></a>
+
+          </nav>
+
+
+        </header>
+      </div>
+
+      <!-- carrusel -->
+
+
+
+
+    	<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+
+    		<!-- Indicadores -->
+
+      		<ol class="carousel-indicators">
+    		    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+
+    		    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+
+    		    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      		</ol>
+
+     		<!-- Imágenes -->
+
+      		<div class="carousel-inner">
+        		<div class="carousel-item active" data-interval="3000">
+         			 <img src="https://www.cmdsport.com/app/uploads/2017/04/alberto-contador.jpg" class="d-block w-100" alt="On road">
+
+         			 <!-- Texto de la imagen -->
+
+          			<div class="carousel-caption d-none d-md-block">
+            			<h5>Carretera</h5>
+            			<p>Ligereza y fiabilidad</p>
+          			</div>
+        		</div>
+
+
+        		<div class="carousel-item" data-interval="3000">
+         			 <img src="https://bikerumor.com/wp-content/uploads/2019/05/2020-Trek-Supercaliber-prototype_short-travel-carbon-World-Cup-cross-country-XC-race-mountain-bike_Jolanda-Neff-air.jpg" class="d-block w-100" alt="Off road">
+          			<div class="carousel-caption d-none d-md-block">
+           				<h5>Montaña</h5>
+            			<p>Flotando sobre las rocas</p>
+          			</div>
+        		</div>
+
+
+        		<div class="carousel-item" data-interval="3000">
+         			<img src="https://www.sport.be/media/photos/fotospecial/15092/BELGAIMAGE-140573990.jpg" class="d-block w-100" alt="CX">
+          			<div class="carousel-caption d-none d-md-block">
+           			 	<h5>Ciclocross</h5>
+            			<p>El barro no tiene secretos</p>
+          			</div>
+        		</div>
+      		</div>
+
+      		<!-- Controles de desplazamiento -->
+
+      		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        		<span class="sr-only">Anterior</span>
+      		</a>
+
+      		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+        		<span class="sr-only">Siguiente</span>
+      		</a>
+    	</div>
+
+<!-- rejilla -->
+
+      <div class="container-rejilla">
+        <div class="sec-title">
+          <h1>On road</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+      </div>
+
+    <!-- tríptico de fotos -->
+
+        <div class="row">
+          <div class="col-md-4">
+            <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/EmondaSL5Disc_20_27880_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+            <div class="col-md-4-h3"><h3>Bici carretera1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/DomaneAL3WSD_23525_B_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+            <div class="col-md-4-h3"><h3>Bici carretera2</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/MadoneSLR9eTapD_20_28486_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+            <div class="col-md-4-h3"><h3>Bici triatlón</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- rejilla -->
+
+        <div class="container-rejilla">
+          <div class="sec-title">
+            <h1>Off road</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+
+          <!-- tríptico de fotos -->
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/FuelEX98_20_29090_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+              <div class="col-md-4-h3"><h3>Bici montaña1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Supercaliber97_20_28588_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+              <div class="col-md-4-h3"><h3>Bici montaña2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Supercaliber99XTR_20_31062_C_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+              <div class="col-md-4-h3"><h3>Bici montaña3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- rejilla -->
+
+          <div class="container-rejilla">
+            <div class="sec-title">
+              <h1>E-bikes</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+            </div>
+
+            <!-- tríptico de fotos -->
+
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Powerfly5_20_30499_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+              <div class="col-md-4-h3"><h3>Bici montaña1</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Powerfly7WEU_19_23230_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+              <div class="col-md-4-h3"><h3>Bici montaña2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/TM1PlusLowstep_19_25157_B_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+              <div class="col-md-4-h3"><h3>Bici montaña3</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div>
+            </div>
+          </div>
+
+            <!-- Nuevo urbano, niños, material en slider  -->
+
+            <!-- rejilla -->
+
+            <!-- <div class="container-rejilla">
+              <div class="sec-title">
+                <h1>Para la ciudad</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+              </div>
+
+              </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <h3>Urbanas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                    <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Powerfly5_20_30499_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Infantil</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                    <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Powerfly7WEU_19_23230_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+                  </div>
+                  <div class="col-md-4">
+                    <h3>Material</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                    <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/TM1PlusLowstep_19_25157_B_Primary?$responsive-pjpg$&wid=1920&hei=1440" width="400px" alt="">
+                  </div>
+                </div> -->
+
+<!-- Material -->
+              <!-- rejilla -->
+              <div id="material">
+                <h1>Material</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+
+
+                <div class="row">
+                  <div class="col-md-6">
+
+                    <!-- carrusel -->
+
+                  	<div id="carouselExampleCaptions2" class="carousel slide carousel-fade" data-ride="carousel">
+
+                  		<!-- Indicadores -->
+
+                    		<ol class="carousel-indicators">
+                  		    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+
+                  		    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+
+                  		    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+
+                          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+
+                    		</ol>
+
+                   		<!-- Imágenes -->
+
+                    		<div class="carousel-inner">
+                      		<div class="carousel-item active" data-interval="3000">
+                       			 <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/11626_D_1_Velocis_CE_Helmet?$responsive-pjpg$&wid=1920&hei=1440" class="d-block w-100" alt="Casco">
+
+                       			 <!-- Texto de la imagen -->
+
+                        	<div class="carousel-caption d-none d-md-block">
+                          			<h5>Cascos</h5>
+                          			<p>Te protegemos</p>
+                        			</div>
+                      		</div>
+
+                      		<div class="carousel-item" data-interval="3000">
+                       			 <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/SantiniTrekSegafredoTeamGlove_23286_B_Alt3?$responsive-pjpg$&wid=1920&hei=1440" class="d-block w-100" alt="Guantes">
+                        			<div class="carousel-caption d-none d-md-block">
+                         				<h5>Guantes</h5>
+                          			<p>Suavidad y confort</p>
+                        			</div>
+                      		</div>
+
+                      		<div class="carousel-item" data-interval="3000">
+                       			<img src="https://trek.scene7.com/is/image/TrekBicycleProducts/CircuitLTDJersey_22299_H_Primary?$responsive-pjpg$&wid=1920&hei=1440" class="d-block w-100" alt="Maillot">
+                        			<div class="carousel-caption d-none d-md-block">
+                         			 	<h5>Maillots</h5>
+                          			<p>Como una segunda piel</p>
+                        			</div>
+                      		</div>
+
+                        <div class="carousel-item" data-interval="3000">
+                          <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/BontragerXXXRoadLIMITED_29082_A_Primary?$responsive-pjpg$&wid=1920&hei=1440" class="d-block w-100" alt="Zapatillas">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Zapatillas</h5>
+                              <p>Diseño y comodidad</p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    		<!-- Controles de desplazamiento -->
+
+                    		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      		<span class="sr-only">Anterior</span>
+                    		</a>
+
+                    		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                      		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      		<span class="sr-only">Siguiente</span>
+                    		</a>
+                  	</div>
+                  <div id="material-txt" class="col-md-6">
+                    <h3>Cascos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                    <br>
+                    <h3>Guantes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                    <br>
+                    <h3>Maillots</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                    <br>
+                    <h3>Zapatillas</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Entradas blog -->
+
+              <div class="container-rejilla">
+                <div class="sec-title">
+                  <h1>Últimas entradas</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                </div>
+
+                <div class="row">
+
+                <div class="card" style="width: 22rem;">
+                  <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/PowerflyFS5G2W_20_23269_A_Portrait?$responsive-pjpg$&wid=1920&hei=1440" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Novedad eléctrica off road</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn btn-primary">Leer más...</a>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 22rem;">
+                  <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Boone7Disc_20_28036_A_Portrait?$responsive-pjpg$&wid=1920&hei=1440" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">La nueva joya del cx</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn btn-primary">Leer más...</a>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 22rem;">
+                  <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/MadoneSL6Disc_20_28714_B_Portrait?$responsive-pjpg$&wid=1920&hei=1440" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">La gran apuesta contra el crono</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn btn-primary">Leer más...</a>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 22rem;">
+                  <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Farley96_19_24589_A_Portrait?$responsive-pjpg$&wid=1920&hei=1440" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Date un capricho este otoño</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="#" class="btn btn-primary">Leer más...</a>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <!-- Footer -->
+              <div id="footer" class="container-rejilla">
+                <div id="footer-rejilla" class="sec-title">
+                  <h1>La gama más amplia del mercado</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniams.</p>
+                </div>
+
+              <footer class="container-fluid">
+
+            		<div class="row">
+
+            			<div class="col-md-4">
+
+            				<form id="form-footer" class="form-group">
+            					<label>Suscríbete a nuestra newsletter</label>
+            					<input class="form-control" type="email" placeholder="Tu email" name="">
+            					<button id="form-control-button" class="form-control" type="submit">¡Me suscribo!</button>
+                      <p>Al suscribirte, nos das tu consentimiento para enviar la información suministrada anteriormente a Scott Bike, la cual será almacenada en España.</p>
+                      <p> © Todos los derechos reservados</p>
+                      <br>
+                      <br>
+                      <br>
+                      <p id="design"><a href="#">Designed by: Yoyestasdos</a></p>
+                    </form>
+
+            			</div>
+
+            			<div id="col2-footer" class="col-md-4">
+                    <label>Contáctanos con total confianza</label>
+
+            				<a class="navbar-brand" href="#"><img src="https://i.pinimg.com/originals/00/4d/71/004d71c73077ee3b916b3a2f8bee6928.jpg" width="200"></a>
+
+            				<p id="direccion">Avda. del Levante UD, 2<br>46015 Valencia<br>Tel: 123456789<br>Email: contacto@scott.com<br>--------------------------------------------------------------<br>Horario comercial:<br>Lunes a Viernes: De 9:00 a 21:00 horas.<br>Sábados: De 9 a 14 horas.<br>En nuestra tienda online, cualquier día a cualquier hora.</p>
+
+            			</div>
+
+            			<div class="col-md-4">
+
+            				<label>Encuéntranos</label>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.4741335864946!2d-0.39209119508384044!3d39.49447486589796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6045f24366f7b5%3A0x5123f990d5ebef02!2sAv.%20Levante%20Ud%2C%202%2C%2046025%20Valencia!5e1!3m2!1ses!2ses!4v1591377625275!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            			</div>
+
+            		</div>
+
+            	</footer>
+
+  </body>
+</html>
